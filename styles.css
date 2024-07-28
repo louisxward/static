@@ -1,0 +1,41 @@
+:root {
+  --rotating-color: #ffff00;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid var(--rotating-color);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.container {
+  padding: 30px;
+}
+.container h1 {
+  font-size: 35px;
+}
+.links {
+  padding: 10px;
+}
+.links a {
+  font-family: "Times New Roman", serif;
+  text-decoration: none;
+  color: white;
+  margin: 0 12px 0 12px;
+  font-size: 12px;
+}
+.links a:hover {
+  color: var(--rotating-color);
+}
