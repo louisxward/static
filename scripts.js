@@ -10,5 +10,16 @@
     document.documentElement.style.setProperty("--rotating-color", color);
   }
 
+    const originalTitle = document.title;
+    awayTitle = "Hey, come back!";
+
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) {
+        document.title = awayTitle;
+      } else {
+        document.title = originalTitle;
+      }
+    });
+
   setInterval(updateColor, updateInterval);
 })();
