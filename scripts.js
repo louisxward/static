@@ -10,5 +10,16 @@
     document.documentElement.style.setProperty("--rotating-color", color);
   }
 
+    const originalTitle = document.title;
+    awayTitle = "Elephant Grade Lubricant, 5L, Water Based, Smooth Texture, Non Sticky, Non Staining";
+
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) {
+        document.title = awayTitle;
+      } else {
+        document.title = originalTitle;
+      }
+    });
+
   setInterval(updateColor, updateInterval);
 })();
