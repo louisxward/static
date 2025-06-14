@@ -11,7 +11,7 @@
   }
 
     const originalTitle = document.title;
-    awayTitle = "Hey, come back!";
+    awayTitle = "Elephant Grade Lubricant, 5L, Water Based, Smooth Texture, Non Sticky, Non Staining";
 
     document.addEventListener("visibilitychange", () => {
       if (document.hidden) {
